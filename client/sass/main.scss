@@ -1,0 +1,40 @@
+//imports
+//globbing doesn't work here... :(
+
+@import './variables';
+@import '../components/overview/overview';
+@import '../components/login/login';
+
+
+//global app styles
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+.total-runtime {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+body {
+  font-family: 'Roboto', Helvetica;
+  font-size: 16px;
+}
+
+.app-container {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 24px;
+}
+
+.panel-default {
+  border-color: $border-color;
+}
+
+.accounts-ui__field label {
+  pointer-events: none;
+}
